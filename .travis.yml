@@ -1,0 +1,8 @@
+language: java
+before_install: sudo pip install codecov
+script: mvn clean verify
+after_success: codecov
+
+jdk:
+  - oraclejdk8
+  - openjdk8
